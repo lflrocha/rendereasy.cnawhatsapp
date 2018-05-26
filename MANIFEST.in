@@ -1,0 +1,2 @@
+recursive-include rendereasy *
+global-exclude *pyc

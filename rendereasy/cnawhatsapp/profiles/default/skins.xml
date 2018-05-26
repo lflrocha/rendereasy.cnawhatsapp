@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="CNA Whatsapp">
+
+ <object name="rendereasy_cnawhatsapp_assets"
+    meta_type="Filesystem Directory View"
+    directory="rendereasy.cnawhatsapp:skins/rendereasy_cnawhatsapp_assets"/>
+ <object name="rendereasy_cnawhatsapp_templates"
+    meta_type="Filesystem Directory View"
+    directory="rendereasy.cnawhatsapp:skins/rendereasy_cnawhatsapp_templates"/>
+
+
+ <skin-path name="CNA Whatsapp" based-on="Sunburst Theme">
+  <layer name="rendereasy_cnawhatsapp_assets"
+     insert-after="custom"/>
+  <layer name="rendereasy_cnawhatsapp_templates"
+     insert-after="rendereasy_cnawhatsapp_assets"/>
+ </skin-path>
+
+</object>

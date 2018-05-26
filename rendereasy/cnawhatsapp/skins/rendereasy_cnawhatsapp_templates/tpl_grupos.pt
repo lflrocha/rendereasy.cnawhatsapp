@@ -1,0 +1,75 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:block fill-slot="top_slot"
+           tal:define="dummy python:request.set('disable_border',1)" />
+
+
+    <metal:block metal:fill-slot="head_slot">
+    	<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    	<script type="text/javascript" language="javascript" src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+    	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css">
+        <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    </metal:block>
+
+<body>
+
+    <metal:main fill-slot="main">
+
+        <div metal:define-macro="main">
+
+            <p class="titulo">Grupos</p>
+
+            <table id="grupos" class="display compact" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Grupo</th>
+                        <th>Quantidade</th>
+                        <th>Última alteração</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody tal:define="grupos python:context.getGrupos()">
+                <tal:rep tal:repeat="grupo grupos">
+                    <tr>
+                        <td><a tal:attributes="href python:grupo.getURL()" tal:content="grupo/Title" /></td>
+                        <td><span tal:replace="grupo/getQuantidade" /></td>
+                        <td><span tal:replace="python:DateTime(grupo.modified).strftime('%d/%m/%Y %H:%M')" /></td>
+                        <td><a tal:attributes="href python:grupo.getURL()+'/edit'"><img src="icone_editar.png" alt="Editar"></a></td>
+                        <td><a tal:attributes="href python:grupo.getURL()+'/delete_confirmation'"><img src="icone_excluir.png" alt="Excluir"></a></td>
+                    </tr>
+                </tal:rep>
+                </tbody>
+            </table>
+
+
+        </div>
+
+        <script>
+            $(document).ready(function() {
+                $('#grupos').dataTable( {
+                    "paging":   true,
+                    "searching": false,
+                    "info":     false,
+                    "ordering": true,
+                    "pageLength": 50,
+                    "pagingType": "simple_numbers",
+                    "order": [[ 0, "asc" ]],
+                    "columns": [{ "width": "60%" },{ "width": "10%" },{ "width": "20%" },{ "width": "5%"},{ "width": "5%"}]
+                } );
+            } );
+
+        </script>
+
+    </metal:main>
+
+</body>
+</html>

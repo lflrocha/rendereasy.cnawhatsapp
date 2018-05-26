@@ -1,0 +1,10 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="rendereasy.cnawhatsapp">
+
+  <!-- File System Directory Views registration -->
+  <cmf:registerDirectory name="rendereasy_cnawhatsapp_assets"/>
+  <cmf:registerDirectory name="rendereasy_cnawhatsapp_templates"/>
+
+</configure>

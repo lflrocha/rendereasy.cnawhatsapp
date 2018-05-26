@@ -1,0 +1,76 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+
+    <metal:block fill-slot="top_slot"
+           tal:define="dummy python:request.set('disable_border',1)" />
+
+
+    <metal:block metal:fill-slot="head_slot">
+    	<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    	<script type="text/javascript" language="javascript" src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+    	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css">
+        <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    </metal:block>
+
+<body>
+
+    <metal:main fill-slot="main">
+
+        <div metal:define-macro="main">
+
+
+            <p class="titulo">Campanhas</p>
+
+            <table id="campanhas" class="display compact" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Campanha</th>
+                        <th>Data</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody tal:define="campanhas python:context.getCampanhas()">
+                <tal:rep tal:repeat="campanha campanhas">
+                    <tr>
+                        <td><span tal:replace="campanha/review_state" /></td>
+                        <td><a tal:attributes="href python:campanha.getURL()" tal:content="campanha/Title" /></td>
+                        <td><span tal:replace="python:DateTime(campanha.created).strftime('%d/%m/%Y %H:%M')" /></td>
+                        <td><a tal:attributes="href python:campanha.getURL()+'/content_status_modify?workflow_action=submit'"><img src="icone_solicitar.png" alt="Solicitar"></a></td>
+                        <td><a tal:attributes="href python:campanha.getURL()+'/edit'"><img src="icone_editar.png" alt="Editar"></a></td>
+                        <td><a tal:attributes="href python:campanha.getURL()+'/delete_confirmation'"><img src="icone_excluir.png" alt="Excluir"></a></td>
+                    </tr>
+                </tal:rep>
+                </tbody>
+            </table>
+
+
+        </div>
+
+        <script>
+            $(document).ready(function() {
+                $('#campanhas').dataTable( {
+                    "paging":   true,
+                    "pageLength": 50,
+                    "pagingType": "simple_numbers",                    
+                    "searching": false,
+                    "info":     false,
+                    "bSort": false,
+                    "columns": [{ "width": "15%" },{ "width": "55%" },{ "width": "15%"},{ "width": "5%"},{ "width": "5%"},{ "width": "5%"}]
+                } );
+            } );
+        </script>
+
+    </metal:main>
+
+</body>
+</html>

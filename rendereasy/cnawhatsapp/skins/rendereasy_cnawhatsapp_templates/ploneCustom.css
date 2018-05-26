@@ -1,0 +1,577 @@
+/* devanagari */
+@font-face {
+  font-family: 'Sarala';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sarala'), local('Sarala-Regular'), url(https://fonts.gstatic.com/s/sarala/v1/NJwuI1TITIjWFYEmObCbNH-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Sarala';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sarala'), local('Sarala-Regular'), url(https://fonts.gstatic.com/s/sarala/v1/xeEVwFNs1gC2ZipFGHvXtn-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Sarala';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sarala'), local('Sarala-Regular'), url(https://fonts.gstatic.com/s/sarala/v1/H047f3ajv0xCz4_ChFYuv-vvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Sarala';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Sarala Bold'), local('Sarala-Bold'), url(https://fonts.gstatic.com/s/sarala/v1/07JYj812aYX6GSdYxv2jSoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Sarala';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Sarala Bold'), local('Sarala-Bold'), url(https://fonts.gstatic.com/s/sarala/v1/WRp-PFLWd-4JgZ2_Nf2SQIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Sarala';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Sarala Bold'), local('Sarala-Bold'), url(https://fonts.gstatic.com/s/sarala/v1/NktIEkUOaTGbiS3SsqVszZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Economica';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Economica'), local('Economica-Regular'), url(https://fonts.gstatic.com/s/economica/v4/ivOlup5oBnODGd64nVDAFIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Economica';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Economica'), local('Economica-Regular'), url(https://fonts.gstatic.com/s/economica/v4/jObgDQiPUtmACAaaK3pMG5Bw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Economica';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Economica Bold'), local('Economica-Bold'), url(https://fonts.gstatic.com/s/economica/v4/UK4l2VEpwjv3gdcwbwXE9IjoYw3YTyktCCer_ilOlhE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Economica';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Economica Bold'), local('Economica-Bold'), url(https://fonts.gstatic.com/s/economica/v4/UK4l2VEpwjv3gdcwbwXE9Bampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+
+
+
+/* CONTENT ACTIONS */
+
+#contentActionMenus {
+    background: #4164A0 none repeat scroll 0 0;
+}
+
+#contentActionMenus dl.actionMenu a,
+#contentActionMenus dl.actionMenu.activated dd {
+    background-color: #4164A0;
+}
+
+#contentActionMenus dl.actionMenu.activated dd {
+    border-bottom: 0.5em solid #4164A0;
+}
+
+
+
+
+
+#portal-header {
+    text-align: center;
+}
+
+#portal-logo {
+    margin: 1.2em 0 0 0;
+    position: relative;
+    left: 6em;
+}
+
+body{
+  font-family: 'Sarala', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sarala', sans-serif;
+    font-weight: bold;
+    color: #203A67;
+    line-height: 1.5em;
+}
+
+
+/* ESTRUTURA PRINCIPAL */
+
+#content {
+    min-height: 450px;
+   color: #203A67;
+}
+
+
+#portal-globalnav ul.submenu a,
+#portal-globalnav ul.submenu a:hover {
+    border-top: 1px solid white;
+}
+
+#portal-globalnav li.selected ul.submenu a:hover {
+    background-color: #2A8CC9;
+}
+
+
+ul.submenu {
+    width: auto;
+    border-color: White;
+    border-width: 1px;
+    border-style: none none solid none;
+}
+
+#portal-globalnav {
+    background-color: #2A8CC9;
+    font-size: 16px;
+    width: 100%;
+}
+
+#portal-globalnav-ul {
+    margin: 0 auto;
+    display:table;
+}
+
+#portal-globalnav li {
+    display: inline;
+}
+
+#portal-globalnav li a{
+    display: inline-block;
+    background-color: #2A8CC9;
+    border: none;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    text-transform: uppercase;
+    white-space: normal;
+    color: White;
+    line-height: 1.5em;
+    min-width: 16em;
+}
+
+#portal-globalnav li a:hover,
+#portal-globalnav ul li a.hasChildrens:hover {
+    background-color: #0b3e6e;
+}
+
+#portal-globalnav .selected a,
+#portal-globalnav .selected a:hover,
+#portal-globalnav a:hover {
+    background: none repeat scroll 0 0 #0b3e6e;
+    color: #dddddd;
+}
+
+#portal-globalnav li.selected ul li a {
+    background-color: #205C90;
+    color: #fff;
+}
+
+
+#portal-globalnav ul li ul li a {
+    background-color: #2d5393;
+    height: auto;
+    vertical-align: top;
+    width: 15em;
+    padding: 0.7em 0,7em;
+    border: 0px 0px solid #fff;
+}
+
+#portal-globalnav .state-published {
+    color: #fff !important;
+}
+
+
+
+
+
+
+.template-atct_edit #content {
+    background-color: #FFFFFF;
+    opacity:0.85;
+    filter: alpha(opacity=85);
+   -moz-opacity:0.85;
+  padding: 20px;
+}
+
+.template-capa #portal-column-content{
+  background-image: url('bg-index.jpg');
+        background-repeat: no-repeat;
+       background-size: cover;
+      background-position: center;
+       margin-top: -16px;
+}
+
+.section-tv-nbr #portal-columns{
+        background-image: url('fundo-internas.jpg');
+        background-repeat: no-repeat;
+       background-size: cover;
+      background-position: center;
+       margin-top: -16px;
+}
+
+
+.section-tv-brasil #portal-columns{
+        background-image: url('fundo-internas.jpg');
+        background-repeat: no-repeat;
+       background-size: cover;
+      background-position: center;
+       margin-top: -16px;
+}
+
+.section-voz-do-brasil #portal-columns{
+        background-image: url('fundo-internas.jpg');
+        background-repeat: no-repeat;
+       background-size: cover;
+      background-position: center;
+       margin-top: -16px;
+}
+
+.section-agencia-brasil #portal-columns{
+  background-image: url('fundo-internas.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -16px;
+}
+
+
+.conteudoFlex{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: strech;
+   align-content: space-around;
+   width: 55%;
+   margin: 7% auto;
+   padding: 20px;
+   font-family: 'Economica', sans-serif !important;
+   font-size: 20px;
+}
+
+/* .conteudoFlex > div{
+    display: inline-block;
+    margin: 0 7px 15px;
+    min-width: 155px;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    flex-grow: 1;
+    flex-basis: 0;
+    color: #153462;
+} */
+
+.conteudoFlex > div h2{
+
+}
+
+.conteudoFlex > div ul li{
+    list-style: none;
+    margin: 10px 30px;
+    text-align: center;
+}
+
+.conteudoFlex > div ul li a{
+
+}
+
+.conteudoFlex > div ul li a:hover{
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+
+
+.linha_flex{
+   width: 100%;
+  color: #fff;
+}
+
+.linha_foto{
+        text-align: center;
+        font-size: 24px;
+       font-weight: 700;
+
+}
+
+
+.linha_foto img{
+
+}
+
+.linha_flex ul{
+  align-self: center;
+padding: 20px;
+display: flex;
+flex-wrap: wrap;
+margin: 0 !important;
+justify-content: center;
+font-weight: 400;
+font-size: 18px;
+}
+
+
+.template-index_interna .linha_flex {
+   color: #2d5393;
+}
+
+.template-index_interna .conteudoFlex {
+width: 70%;
+margin: 7% auto;
+}
+
+#edit-bar {
+    background-color: #dddddd;
+    border: 0.25em solid #dddddd;
+    border-style: solid solid none;
+}
+
+#content-views {
+    background-color: #dddddd;
+}
+
+
+/* CAPA */
+
+.box {
+    text-align: center;
+}
+
+.boxTitle {
+    font-size: 150%;
+    font-weight: bold;
+    color: #2d5393;
+    margin-top: 10px;
+}
+
+.boxCapa {
+    width:100%;
+    text-align:center;
+}
+
+.boxItem {
+    margin:auto;
+    width:1000px;
+    display: inline-block;
+}
+
+.boxTotal {
+    margin-top: 100px;
+}
+
+.boxTotalTexto {
+    font-size: 200%;
+}
+
+/* ESTILOS GERAIS */
+
+.center{
+    text-align:center;
+}
+
+#left {
+    float: left;
+    margin-left: 10%;
+    width: 35%;
+}
+
+#right {
+    float: right;
+    margin-right: 10%;
+    width: 35%;
+}
+
+#left p, #right p{
+    padding-left: 1em;
+}
+
+.titulo {
+    color: #2d5393;
+    font-size: 200%;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Sarala', sans-serif;
+}
+
+.titulo-portlet {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    margin-top: 20px;
+}
+
+a:link, a:visited {
+    color: #2d5393;
+}
+
+#content input,
+#content .label,
+#content select,
+#content label {
+    font-size: 130%;
+}
+
+/* BARRA LATERAL */
+
+div.botaoPortlet {
+    background: none repeat scroll 0 0 #142746;
+    border-radius: 0em;
+    font-size: 100%;
+    margin: 0.5em auto 1em;
+    padding: 0.5em;
+    text-align: center;
+    color: white !important;
+}
+
+div.botaoPortlet:hover {
+    background-color: #2d5393;
+    color: white !important;
+}
+
+div.botaoPortlet a{
+    color: white !important;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+div.botaoPortlet a:visited{
+    color: fff !important;
+}
+
+/* Lista de solicitacoes */
+
+#content a:link, dl.portlet a:link {
+    border-bottom: 0 solid #ccc;
+    color: #2d2d2d;
+}
+
+#content a:hover, dl.portlet a:hover {
+    border-bottom: 0 solid #ccc;
+    color: #2d5393 !important;
+}
+
+div.listingBar a:hover{
+    background-color: #83bb23;
+    color: White;
+    border: none;
+}
+
+div.row {
+    float: left;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+div.cell {
+    position: relative;
+    float: left;
+    left: 100%;
+}
+
+.ie6 div.cell {
+    float: none;
+}
+
+/* Width classes.
+For a given cell width, the calculation is: width: (6.25*n - 2.25)% */
+div.width-1  { width:  4%    }
+div.width-2  { width: 10.25% }
+div.width-3  { width: 16.5%  }
+div.width-4  { width: 22.75% }
+div.width-5  { width: 29%    }
+div.width-6  { width: 35.25% }
+div.width-7  { width: 41.5%  }
+div.width-8  { width: 47.75% }
+div.width-9  { width: 54%    }
+div.width-10 { width: 60.25% }
+div.width-11 { width: 66.5%  }
+div.width-12 { width: 72.75% }
+div.width-13 { width: 79%    }
+div.width-14 { width: 85.25% }
+div.width-15 { width: 91.5%  }
+div.width-16 { width: 97.75% }
+
+
+/* Positioning classes, these are subtracting from a rightmost
+position, which is why they seem the wrong way around */
+/* For a given position, the calculation is margin-left: -100 + (6.25*n) + 1.125 */
+div.position-0  { margin-left: -98.875% }
+div.position-1  { margin-left: -92.625% }
+div.position-2  { margin-left: -86.375% }
+div.position-3  { margin-left: -80.125% }
+div.position-4  { margin-left: -73.875% }
+div.position-5  { margin-left: -67.625% }
+div.position-6  { margin-left: -61.375% }
+div.position-7  { margin-left: -55.125% }
+div.position-8  { margin-left: -48.875% }
+div.position-9  { margin-left: -42.625% }
+div.position-10 { margin-left: -36.375% }
+div.position-11 { margin-left: -30.125% }
+div.position-12 { margin-left: -23.875% }
+div.position-13 { margin-left: -17.625% }
+div.position-14 { margin-left: -11.375% }
+div.position-15 { margin-left:  -5.125% }
+
+/* End of the core Deco Grid System */
+/* Convenience classes — ¼, ½, ¾ widths and ¼, ½, ¾ positions.
+Not strictly necessary. */
+div.width-1\3a 2 { width:    47.75%; } /* .width-1:2 */
+div.width-1\3a 4 { width:    16.5%; } /* .width-1:4 */
+div.width-3\3a 4 { width:    79%; } /* .width-3:4 */
+div.width-full   { width:    97.75%  }
+div.position-1\3a 4 {margin-left:    -80.125%;} /* .position-1:4 */
+div.position-1\3a 2 {margin-left:    -48.875%;} /* .position-1:2 */
+div.position-3\3a 4 {margin-left:    -17.625%;} /* .position-3:4 */
+
+/* Special classes for ⅓, ⅔ widths and ⅓, ⅔ positions.
+These do not strictly conform to the grid, but are useful for certain layouts. */
+div.width-1\3a 3 { width: 31.08%; } /* .width-1:3 */
+div.width-2\3a 3 { width: 64.42%; } /* .width-2:3 */
+div.position-1\3a 3 {margin-left: -65.545%;} /* .position-1:3 */
+div.position-2\3a 3 {margin-left: -32.205%;} /* .position-2:3 */
